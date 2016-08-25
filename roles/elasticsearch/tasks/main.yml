@@ -1,0 +1,5 @@
+---
+
+- name: we made it
+  debug:
+    msg="This is the task you were hoping for."

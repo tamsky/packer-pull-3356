@@ -1,0 +1,19 @@
+{
+    "builders": [
+        {
+            "type": "docker",
+            "image": "ansible/ubuntu14.04-ansible:stable",
+            "commit": true
+        }
+    ],
+    "provisioners": [
+        {
+            "type": "ansible-local",
+            "playbook_file": "provisioning/container.yml",
+            "playbook_dir": "../../",
+            "playbook_file": "../../playbooks/full-stack.yml",
+            "inventory_groups": "elasticsearch",
+            "group_vars": "../../group_vars"
+        }
+    ]
+}
