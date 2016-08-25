@@ -9,7 +9,6 @@
     "provisioners": [
         {
             "type": "ansible-local",
-            "playbook_file": "provisioning/container.yml",
             "playbook_dir": "../../",
             "playbook_file": "../../playbooks/full-stack.yml",
             "inventory_groups": "elasticsearch",
