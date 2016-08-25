@@ -1,7 +1,7 @@
 # packer-pull-3356
 Simple example to show use of new flag
 
-packer is being run using `cd util/packer/ ; packer build packer.yml`
+packer is being run using `cd util/packer/ ; packer build packer.json`
 
 Without the proposed flag `playbook_file_dir`, when the
 `playbook_file` is copied to the remote host, it is copied to the
